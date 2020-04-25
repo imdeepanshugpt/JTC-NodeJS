@@ -1,22 +1,50 @@
 {
   "logger": {
-    "console": false
+    "console": true
   },
   "mongoDb": {
-    "debug": false,
-    "uri": null
+    "debug": true,
+    "uri": "mongodb+srv://imdeepanshugpt:imdeepanshugpt@deepanshu-927s8.mongodb.net/test?retryWrites=true&w=majority"
   },
   "papertrail": {
-    "host": null,
-    "port": null,
-    "program": "api-staging",
-    "handleExceptions": true
+    "host": "",
+    "port": "",
+    "program": "",
+    "handleExceptions": false
   },
   "sentry": {
-    "dsn": null,
-    "env": "staging"
+    "dsn": "",
+    "env": "development"
+  },
+  "www": {
+    "port": 8000
+  },
+  "accounts": {
+    "jwt": {
+      "key":"234", // given dummy key for jwt
+      "exp": 604800
+    },
+    "reset": {
+      "exp": 8.64e+7
+    }
   },
   "mail": {
-    "enabled": true
+    "enabled":false, // given dummy value of false
+    "locale": "en",
+    "sender": {
+      "accounts": {
+        "email": "accounts@JTC.com",
+        "name": "JTC | Accounts"
+      }
+    }
+  },
+  "sendgrid": {
+    "APIKey":"2134", // given dummy values
+    "template": {
+      "en": {
+        "accountsResetPassword": "d-85f352d5a7de47babe3b8137f8ca9214"
+      }
+    }
   }
+
 }
