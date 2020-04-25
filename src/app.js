@@ -95,6 +95,9 @@ app.use('/accounts', routes.accounts);
 app.use('/account', routes.account);
 app.use('/profile', routes.profile);
 app.use('/post', routes.post);
+app.get('/', (req, res) => {
+  res.send('Server is running successfully');
+})
 // not found handler
 app.use((req, res, next) => {
   next(Error.NotFound());
