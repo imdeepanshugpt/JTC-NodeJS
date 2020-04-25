@@ -4,7 +4,7 @@
   },
   "mongoDb": {
     "debug": true,
-    "uri": "mongodb://localhost:27017/test" 
+    "uri": "mongodb+srv://imdeepanshugpt:imdeepanshugpt@deepanshu-927s8.mongodb.net/test?retryWrites=true&w=majority"
   },
   "papertrail": {
     "host": "",
